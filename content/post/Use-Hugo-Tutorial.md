@@ -57,3 +57,27 @@ With `Travis C.I.`, you can set up a task that runs every time you change or add
 - CloudFront will also makes it easy to add http security to your website for more security.
 
 GitHub and Travis CI are free to use, and Amazon service only charge a few cents per Gigabyte of data you store and transfer. We only need to set up this pipeline once and after that it works automatically.
+
+1. `git add .`, `git commit -m ""` and `git push -u origin master`
+1. link your github account with Travis CI
+1. create a `.travis.yml` in your site folder and the following code to the `.travis.yml` file.
+
+~~~~
+language: go
+install:
+- go get -v github.com/caimiao0714/me
+script:
+- hugo version
+- make build
+branches:
+ only:
+ - master
+~~~~
+
+1. create anther `Makefile` and add the following content to the file:
+
+~~~~~
+build:
+ rm -rf public
+ hugo
+~~~~~

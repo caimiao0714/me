@@ -1,0 +1,9 @@
+language: go
+install:
+- go get -v github.com/caimiao0714/me
+script:
+- hugo version
+- make build
+branches:
+ only:
+ - master
