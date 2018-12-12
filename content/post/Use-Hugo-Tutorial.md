@@ -58,14 +58,14 @@ With `Travis C.I.`, you can set up a task that runs every time you change or add
 
 GitHub and Travis CI are free to use, and Amazon service only charge a few cents per Gigabyte of data you store and transfer. We only need to set up this pipeline once and after that it works automatically.
 
-1. `git add .`, `git commit -m ""` and `git push -u origin master`
-1. link your github account with Travis CI
-1. create a `.travis.yml` in your site folder and the following code to the `.travis.yml` file.
+- `git add .`, `git commit -m ""` and `git push -u origin master`
+- link your github account with Travis CI
+- create a `.travis.yml` in your site folder and the following code to the `.travis.yml` file.
 
 ~~~~
 language: go
 install:
-- go get -v github.com/caimiao0714/me
+- go get -v github.com/spf13/hugo
 script:
 - hugo version
 - make build
@@ -74,10 +74,65 @@ branches:
  - master
 ~~~~
 
-1. create anther `Makefile` and add the following content to the file:
+- create anther `Makefile` and add the following content to the file:
 
 ~~~~~
 build:
- rm -rf public
- hugo
+	rm -rf public
+	hugo
 ~~~~~
+
+You can add a credentials for `Travis CI` in the `README.md` to get a vectorized image for the building status on `Travis CI` using the following code:
+
+~~~~~
+[![Travis CI Build Status](https://travis-ci.org/caimiao0714/me.svg?branch=master)](https://travis-ci.org/caimiao0714/me)
+~~~~~
+
+- Buy your personal domain name on [https://www.namecheap.com/](https://www.namecheap.com/)
+
+- Log in on Amazon [AWS](http://console.aws.amazon.com)
+- AWS services: search for `S3`
+- create a `bucket` using your bought domain
+- copy the Endpoint at static website hosting 'http://www.caimiao0714.com.s3-website.us-east-2.amazonaws.com'
+- Open Services -> Networking & Content Delivery -> CloudFont -> create a new distribution -> Web -> Get Started
+- Paste 'http://www.caimiao0714.com.s3-website.us-east-2.amazonaws.com' to Origin Domain Name
+- redirect HTTP to HTTPS
+- Object Caching: Customize
+- Copy Maximum TTL 'Maximum TTL' and paste it to Minimum and Default TTL
+- Compress Objects Automatically -> Yes
+- Change Alternate Domain Names (CNAMEs) to your bought domain name 'www.caimiao0714.com'
+- MISSING the option to Custom SSL certificate here
+- Request or import a Certificate with ACM (make sure at the top right it says N. Virginia), verify the use of this domain using your email
+- Default Root Object: `index.html`
+
+## Configure DNS
+
+Namecheap.com -> Domain List -> Domain -> Adcanced DNS -> ADD NEW RECORD 
+
+You need to add two records here:
+
+1. CNAME Record
+  Host = www
+  Value = Copy paste Domain name from `CloudFront Distributions`, something like "XXXXXXXX.cloudfront.net"
+2. URL Redirect Record
+  Host = @
+  Value = https://www.caimiao0714.com
+
+Then clear out the two records (*CNAME Record* and *URL Redirect Record*) that are already there.
+
+## CloudFront distribution
+
+Amazon AWS --> search IAM -> Users -> Add user (travis_www.caimiao0714.com) -> click Programmatic access -> next -> Attach existing policies directly -> create policy -> S3
+
+### S3
+
+- Actions:
+  ListBucket
+  DeleteObject
+  PutObject
+  PutObjectAcl
+- Amazon Resource Name (ARN): copy from S3 management console -> select your bucket in the list -> Copy Bucket ARN
+
+### Amazon CloudFront
+
+Actions: CreateInvalidation
