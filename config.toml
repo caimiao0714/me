@@ -1,3 +1,24 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "https://www.example.com/"
+title = "Miao Cai's personal website"
+author = "Miao Cai"
+canonifyurls = true
+languagecode = "en"
+theme = "hugo-black-and-light-theme"
+
+pygmentsstyle       = "bw"
+pygmentscodefences  = true
+
+[params]
+  sitename = "Miao Cai"
+  disableWebFonts = false
+
+[[menu.main]]
+    name = "About"
+    url  = "https://github.com/caimiao0714"
+[[menu.main]]
+    name = "Projects"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+[[menu.main]]
+    name = "Resume"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+
