@@ -11,6 +11,8 @@ pygmentscodefences  = true
 [params]
   sitename = "Miao Cai"
   disableWebFonts = false
+  header_background = "img/Miaocat.jpg"
+  avatar = "/img/Miaocat.jpg"
 
 [[menu.main]]
     name = "About"
@@ -18,6 +20,9 @@ pygmentscodefences  = true
 [[menu.main]]
     name = "Projects"
     url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+[[menu.main]]
+    name = "Papers"
+    url = "https://github.com/caimiao0714"
 [[menu.main]]
     name = "Resume"
     url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
