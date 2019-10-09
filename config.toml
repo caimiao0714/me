@@ -1,8 +1,9 @@
-baseurl = "https://www.example.com/"
+baseurl = "https://github.com/caimiao0714/me"
 title = "Miao's blog"
 author = "Miao Cai"
 canonifyurls = true
 languagecode = "en"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 theme = "hugo-black-and-light-theme"
 
 pygmentsstyle       = "bw"
