@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hongkong on Miao&#39;s blog</title>
+    <link>/tags/hongkong/</link>
+    <description>Recent content in Hongkong on Miao&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 09 Oct 2019 21:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/hongkong/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>火箭莫雷与香港</title>
+      <link>/post/2019-10-09hongkong_morey/</link>
+      <pubDate>Wed, 09 Oct 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/post/2019-10-09hongkong_morey/</guid>
+      <description> 最近在香港的抗议和暴动有越来越严重的趋势。
+Morey’s twitter  </description>
+    </item>
+    
+  </channel>
+</rss>
