@@ -5,9 +5,9 @@ canonifyurls = true
 languagecode = "en"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 theme = "hugo-black-and-light-theme"
-hasCJKLanguage: true
-enableEmoji: true
-footnotereturnlinkcontents: "↩"
+#hasCJKLanguage: true
+#enableEmoji: true
+#footnotereturnlinkcontents: "↩"
 
 pygmentsstyle       = "bw"
 pygmentscodefences  = true
@@ -15,14 +15,28 @@ pygmentscodefences  = true
 [params]
   sitename = "Miao's blog"
   disableWebFonts = false
+  description = "网站由 Hugo 和 blogdown 强力驱动"
+  summary_length = 200
+  github_edit = "https://github.com/XiangyunHuang/r-bloggers/edit/master/content/"
+  footer = "&copy; [Xiangyun Huang](https://r-bloggers.netlify.com/) 2016 - 2019 | [Github](https://github.com/XiangyunHuang) | [推特](https://twitter.com/StatCloud) | [爆栈网](https://stackoverflow.com/users/8278176) | [新浪微博](https://weibo.com/Cloud2016)"
+
 
 [[menu.main]]
     name = "About"
-    url  = "/post/"
+    url  = "/"
 [[menu.main]]
     name = "Projects"
     url  = "/post/"
 [[menu.main]]
     name = "Resume"
     url  = "/post/"
+    
+[params.text]
+    back = "&larr; 回到主页"
+    edit = "编辑页面 &rarr;"
+    truncated = "&hellip;"
+    tags = "关键词："
+    uncategorized = "未分类"
+    title_categories = "栏目分类"
+    title_tags = "关键词列表"
 

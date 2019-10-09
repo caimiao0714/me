@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Miao&#39;s blog</title>
+    <title>Categories on Miao Cai | 蔡苗</title>
     <link>https://github.com/caimiao0714/me/categories/</link>
-    <description>Recent content in Categories on Miao&#39;s blog</description>
+    <description>Recent content in Categories on Miao Cai | 蔡苗</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
@@ -25,15 +25,6 @@
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://github.com/caimiao0714/me/categories/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://github.com/caimiao0714/me/categories/r/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://github.com/caimiao0714/me/categories/r/</guid>
       <description></description>
     </item>
     

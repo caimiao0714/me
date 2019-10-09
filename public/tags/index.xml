@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Miao&#39;s blog</title>
+    <title>Tags on Miao Cai | 蔡苗</title>
     <link>https://github.com/caimiao0714/me/tags/</link>
-    <description>Recent content in Tags on Miao&#39;s blog</description>
+    <description>Recent content in Tags on Miao Cai | 蔡苗</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
@@ -44,33 +44,6 @@
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://github.com/caimiao0714/me/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plot</title>
-      <link>https://github.com/caimiao0714/me/tags/plot/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://github.com/caimiao0714/me/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>https://github.com/caimiao0714/me/tags/r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://github.com/caimiao0714/me/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Regression</title>
-      <link>https://github.com/caimiao0714/me/tags/regression/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://github.com/caimiao0714/me/tags/regression/</guid>
       <description></description>
     </item>
     
