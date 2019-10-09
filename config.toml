@@ -1,6 +1,6 @@
 baseurl = "https://www.example.com/"
-title = "Miao Cai's personal website"
-author = "Miao Cai"
+title = "Black & Light"
+author = "David Hamp-Gonsalves"
 canonifyurls = true
 languagecode = "en"
 theme = "hugo-black-and-light-theme"
@@ -9,20 +9,15 @@ pygmentsstyle       = "bw"
 pygmentscodefences  = true
 
 [params]
-  sitename = "Miao Cai"
+  sitename = "Black & Light"
   disableWebFonts = false
-  header_background = "img/Miaocat.jpg"
-  avatar = "/img/Miaocat.jpg"
 
 [[menu.main]]
     name = "About"
-    url  = "https://github.com/caimiao0714"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
 [[menu.main]]
     name = "Projects"
     url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
-[[menu.main]]
-    name = "Papers"
-    url = "https://github.com/caimiao0714"
 [[menu.main]]
     name = "Resume"
     url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"

@@ -1,22 +1,29 @@
 ---
-title: "About"
-date: 2018-12-12T00:39:03-06:00
-draft: true
+date: "2014-04-09"
+title: About Hugo
 ---
 
+Hugo is a static site engine written in Go.
 
 
-Hello there! This is Miao Cai's personal website.
+It makes use of a variety of open source projects including:
 
-I am a second year doctoral student at Department of Epidemiology and Biostatistics, Saint Louis University. My research interests are Bayesian statistics, statistical reliability, and health economics.
+* [Cobra](https://github.com/spf13/cobra)
+* [Viper](https://github.com/spf13/viper)
+* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
+* [Cast](https://github.com/spf13/cast)
 
-My daily work is conducted in statistical computing platforms [R](https://www.r-project.org/) and [Stan](http://mc-stan.org/).
+Learn more and contribute on [GitHub](https://github.com/spf13).
 
-Here are a couple of my social network sites:
+## Setup
 
-- [Google Scholar](https://scholar.google.com/citations?user=kjFCzEkAAAAJ&hl=en)
-- [ResearchGate](https://www.researchgate.net/profile/Miao_Cai2)
-- [Twitter](https://twitter.com/Miao_Cai_SLU)
-- [LinkedIn](https://www.linkedin.com/in/miao-cai-7b5a62a3/)
+Some fun facts about [Hugo](http://gohugo.io/):
 
-<img src="/img/Miaocat.jpg" alt="drawing" width=300 />
+* Built in [Go](http://golang.org/)
+* Loosely inspired by [Jekyll](http://jekyllrb.com/)
+* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
+* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
+
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
+
+Thanks for reading!
